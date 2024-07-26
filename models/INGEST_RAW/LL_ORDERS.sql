@@ -1,6 +1,6 @@
 {{ config(
     materialized='incremental',
-    unique_key='CUSTOMER_ID'
+    unique_key='ORDER_ID'
 ) }}
 with staged_data as (
     select
