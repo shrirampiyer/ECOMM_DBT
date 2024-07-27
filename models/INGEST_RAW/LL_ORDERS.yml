@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: LL_ORDERS
+    description: "This table contains order data."
+    columns:
+      - name: ORDER_ID
+        description: "The unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMER_ID
+        description: "The unique identifier for each customer."
+        tests:
+          - not_null
+      - name: ORDER_DATE
+        description: "The date when the order was placed."
+        tests:
+          - not_null
+          - accepted_range:
+              min: '2020-01-01'
+              max: '2025-12-31'
+      - name: TOTAL_AMOUNT
+        description: "The total amount for the order."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('customers')
+              field: CUSTOMER_ID
+          - test_total_amount_positive
+      - name: SHIPPING_ADDRESS
+        description: "The address where the order is shipped."
+        tests:
+          - not_null
+      - name: CITY
+        description: "The city of the shipping address."
+        tests:
+          - not_null
+      - name: STATE
+        description: "The state of the shipping address."
+        tests:
+          - not_null
+      - name: COUNTRY
+        description: "The country of the shipping address."
+        tests:
+          - not_null
+      - name: POSTAL_CODE
+        description: "The postal code of the shipping address."
+        tests:
+          - not_null
