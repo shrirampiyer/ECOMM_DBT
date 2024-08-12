@@ -60,9 +60,10 @@ To set up the project on your local machine:
 
 Clone the repository:
 
-bash
-
-git clone https://github.com/yourusername/ecommerce-data-pipeline.git
+```bash
+git clone https://github.com/yourusername/repository-name.git
+cd repository-name
+```
 
 cd ecommerce-data-pipeline
 
