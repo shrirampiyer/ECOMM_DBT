@@ -62,7 +62,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/shrirampiyer/ECOMM_DBT
-cd repository-name
+cd ECOMM_DBT
 ```
 
 cd ecommerce-data-pipeline
