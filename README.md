@@ -61,7 +61,7 @@ To set up the project on your local machine:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/repository-name.git
+git clone https://github.com/shrirampiyer/ECOMM_DBT
 cd repository-name
 ```
 
@@ -83,18 +83,16 @@ Run DBT Models:
 
 Execute the DBT models to transform and load data:
 
-bash
-
+```bash
 dbt run
-
+```
 Run DBT Tests:
 
 Validate the data integrity:
 
-bash
-
+```bash
 dbt test
-
+```
 📈 Data Flow
 
 Data Ingestion: Raw data is ingested into an AWS S3 bucket.
