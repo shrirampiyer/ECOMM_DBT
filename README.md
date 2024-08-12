@@ -1,7 +1,7 @@
 🚀 E-commerce Data Pipeline with DBT & Snowflake
 
 Welcome to the E-commerce Data Pipeline project! This repository showcases an end-to-end ELT pipeline using DBT (Data Build Tool) and Snowflake. The project involves ingesting e-commerce data, transforming it, ensuring data quality, and applying security measures to protect sensitive information.
-
+ 
 📚 Table of Contents
 
 Project Overview
